@@ -1,0 +1,70 @@
+*{box-sizing: border-box;}
+
+
+html{height: 100%;}
+body
+{ height: 100%;
+    display: flex;
+    color: #37424c;
+justify-content: center;
+align-items: center;
+font-family:Arial, Helvetica, sans-serif;
+background: rgb(88,101,185);
+background: linear-gradient(0deg, rgba(88,101,185,1) 2%, rgba(28,145,226,1) 9%, rgba(34,220,253,1) 36%);}
+
+#app{border-radius: 8px;
+    width: 400px;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+background-color: white;
+min-height: 450px;
+box-shadow: 0 5px 11px rgba(0, 0, 0, 0.4)  ; 
+	-webkit-box-shadow: 0 5px 11px rgba(0, 0, 0, 0.4)  ; 
+	-moz-box-shadow: 0 5px 11px rgba(0, 0, 0, 0.4)  ; }
+input{
+position:relative;
+width: 80%;
+border: none;
+outline: none;
+border-bottom: 1px solid gray;
+padding: 10px 22px;
+}
+i{
+    position: relative;
+    left:-150px;
+    top: -27px;
+    color:  #8fa4b7 ;
+
+}
+.benutzer{
+    margin-right: 220px;
+}
+.pass{margin-right: 250px;}
+#vergessen{
+    margin-left: 200px;
+}
+
+#button{background-color: #1ca3ea;
+padding: 10px 35%;
+  margin-top: 15px;
+  color: white;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+}
+
+#button:hover{background-color: #0574af;
+cursor: pointer;
+}
+
+
+
+
+a{
+margin-bottom: 50px;
+color: #1ca3ea;
+
+}
+

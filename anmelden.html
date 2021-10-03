@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <link rel="stylesheet" href="anmelden.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+<div id="app" >
+    
+    <h1>{{anmelden}}</h1>
+    <template id="goster" v-if="schritt==1">
+
+
+   
+
+    <span class="benutzer"><h5>Benutzernahme</h5></span>
+    
+        <input v-model="bunutzer" type="text" placeholder="Benutzernahme eingeben">
+        <i class="far fa-user"></i>
+        <div style="color: red;">{{sonuc}}</div>
+    
+     <span class="pass"><h5>Passwort</h5>  </span>
+    
+         <input v-model="passwort" type="text" placeholder="passwort eingen">
+         <i class="far fa-unlock-alt"></i>
+       <div style="color: red;">{{sonuc2}}</div>
+        
+        <span id="vergessen">Passwort vergessen?</span>
+
+        <button id="button"  @click="klick">Anmelden</button>
+
+        <h4>Sie haben kein Konto?</h4>
+
+        <a href="">Jetzt registirieren</a>
+    </template>
+    <template id="goster2" v-else-if="schritt==2"> 
+        <table>
+        <tr>
+        <th>Vorname</th>
+        <th>Nachname</th>
+        <th>Yas</th>
+        </tr>
+        
+        <tr v-for="x in kullanicilar">
+        <td>{{x.vorname}}</td>
+        <td>{{x.nachname}}</td>
+        <td>{{x.yas}}</td>
+        
+        </tr>
+        
+        
+        
+        </table>
+        
+        
+        
+        <button id="btn2" @click="geri">abmelden</button>
+        
+        </template>
+    
+    </div>
+
+
+
+
+
+<script src="anmelden.js" ></script>
+</body>
+</html>
